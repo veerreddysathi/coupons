@@ -1,0 +1,65 @@
+{
+ "coupons": [
+  {
+   "brand": "zara",
+   "category": "autumn sale",
+   "count": 10,
+   "coupons": [
+    "FCX1K3LM",
+    "BJ4FYPN5",
+    "6TB9UH4R",
+    "LHJK1DPL",
+    "PNGXWVQ2",
+    "B6KO9WYT",
+    "TGB0I5ML",
+    "6WEO8K90",
+    "6WEO8K90"
+   ],
+   "redeemed_coupons": [
+    {
+     "username": "user1",
+     "code": "EGAW2K5D"
+    }
+   ],
+   "remaining_coupons": 9
+  },
+  {
+   "brand": "uniqlo",
+   "category": "spring sale",
+   "count": 5,
+   "coupons": [
+    "CKJDWGFW",
+    "5JAPZ01Z",
+    "ICAPY9EQ",
+    "IXUC9UEH",
+    "Q235V48C"
+   ],
+   "redeemed_coupons": [],
+   "remaining_coupons": 5
+  },
+  {
+   "brand": "nike",
+   "category": "tennis season",
+   "count": 15,
+   "coupons": [
+    "N0GX1KGH",
+    "MJZE42OU",
+    "A2T9DXSG",
+    "K24XZBMT",
+    "2CBGPYO4",
+    "RPACGQYX",
+    "G10BHHBY",
+    "16N60LG2",
+    "S1RMBMMT",
+    "KN0F8ZUH",
+    "APQ13VD4",
+    "G5ZA4HGW",
+    "WZQUUV4P",
+    "2O71WIQ7",
+    "7LUPH0QA"
+   ],
+   "redeemed_coupons": [],
+   "remaining_coupons": 15
+  }
+ ]
+}
