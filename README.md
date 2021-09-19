@@ -3,11 +3,6 @@
 A simple coupon generator service where brands can generate coupons for their promotions, and users can claim a coupon code.
 
 
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
-  
 ## Setup in Local
 
 To deploy this project make sure you have golang set up in your environment. If not you can follow the instructions in the below links
@@ -25,20 +20,24 @@ Once you have Golang set up, go to the root fo the project folder and run the be
 This will generate an executable file that you can run later to have the project up and running. Depending on which OS you are running on, use either of the below commands
 
 ```bash
-  ./coupons (or)
-  ./coupons.exe
+  ./coupons (For MAC)
+  ./coupons.exe (For Windows)
 ```
+ 
+### Base URL
 
-  
+http://localhost:3000/
+
 ## Requests/End points
 
 ### Login
-Description: Autheticates a user using JWT
-URL: http://localhost:3000/login
+**Description**: Autheticates a user using JWT
 
-Request Type: POST
+**Path**: /login
 
-Body Parameters:
+**Request Type**: POST
+
+**Body Parameters**:
 ```json
   {
     "username": "user1",
@@ -46,15 +45,16 @@ Body Parameters:
   }
 ```
 
-Response: 200 Upon success
+**Response**: 200 Upon success
 
 ### Get Coupons
-Description: Return a coupon code of the desired brand category, if the user is logged in or else return an error
-URL: http://localhost:3000/user/getCoupon
+**Description**: Return a coupon code of the desired brand category, if the user is logged in or else return an error
 
-Request Type: POST
+**Path**: /user/getCoupon
 
-Body Parameters:
+**Request Type**: POST
+
+**Body Parameters**:
 ```json
   {
 	  "brand": "zara",
@@ -62,8 +62,8 @@ Body Parameters:
   }
 ```
 #### Success Response
-Status Code: 200
-Response:
+**Status Code**: 200
+**Response**:
 ```json
   {
     "username": "user1",
@@ -73,16 +73,17 @@ Response:
   }
 ```
 #### Failure Response
-Status Code: 401
-Response: Unauthorized user
+**Status Code**: 401
+**Response**: Unauthorized user
 
 ### Generate Brand Coupons
-Description: Generate a given number of coupons for a brand in a desired category/store
-URL: http://localhost:3000/brand/generateCoupons
+**Description**: Generate a given number of coupons for a brand in a desired category/store
 
-Request Type: POST
+**Path**: /brand/generateCoupons
 
-Body Parameters:
+**Request Type**: POST
+
+**Body Parameters**:
 ```json
   {
 	  "brand": "wilson",
@@ -91,8 +92,8 @@ Body Parameters:
   }
 ```
 #### Success Response
-Status Code: 200
-Response:
+**Status Code**: 200
+**Response**:
 ```json
   {
     "brand": "wilson",
@@ -125,5 +126,5 @@ Response:
   }
 ```
 #### Failure Response
-Status Code: 400
-Response: Bad Request
+**Status Code**: 400
+**Response**: Bad Request
